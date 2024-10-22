@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    font-family: "Inter", sans-serif;
+    font-stretch: ultra-expanded;
+    font-weight: 100;
+    font-style: normal;
+    content: "NEXT15";
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 5rem;
+    color: rgba(54, 47, 47, 0.137);
+    z-index: 1;
+    pointer-events: none;
+}
